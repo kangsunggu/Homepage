@@ -42,5 +42,17 @@
         <url-pattern>/admin/*</url-pattern>
     </filter-mapping>    
 
+<servlet><!-- 서블릿 이름과 서블릿 클래스 선언  웹에서 요청할수 있는 클레스이다. 요청과 응답을 할수 있는 클레스 --> 
+        <description></description>
+        <display-name>Team</display-name>
+        <servlet-name>Team</servlet-name>
+        <servlet-class>suggest.Team</servlet-class>
+    </servlet>
+    <servlet-mapping><!-- URL상으로 접근해야 하는 경로명 -->
+        <servlet-name>Team</servlet-name>
+        <url-pattern>/team</url-pattern> <!-- 요청할 시 /suggest를 거쳐서 가야한다. -->
+    </servlet-mapping>  
+
+
 
 </web-app>
