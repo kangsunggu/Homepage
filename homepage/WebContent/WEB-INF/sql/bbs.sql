@@ -13,7 +13,7 @@ CREATE TABLE bbs (
   ansnum  NUMBER(5)     DEFAULT 0, -- 답변 순서 
   PRIMARY KEY (bbsno)  
 ); 
-
+select * from team
 --filename 컬럼추가
  ALTER TABLE bbs
  ADD(filename varchar(50) null,
